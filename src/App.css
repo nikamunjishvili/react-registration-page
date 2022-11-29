@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background:linear-gradient(
+        rgba(20, 255, 255, 0.7),
+        rgba(100, 55, 255, 0.3)
+    ),
+    url(./image/bgImage.jpg);
+    background-size:cover;
+    background-position:center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App form{
+    background-color: #fff;
+    padding: 0px 60px;
+    border-radius: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form h1{
+    color: rgb(16, 16, 145);
+    text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.App form button{
+    background-color:rgb(16, 16, 145);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    color: #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 400px){
+    .App h1{
+        font-size: 28px;
+    }
+    .App form button{
+        width: 100%;
+        height: 40px;
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
 }
